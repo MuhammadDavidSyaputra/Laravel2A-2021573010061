@@ -4,15 +4,16 @@
     <head> <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
-    <title>Daftar Mahasiswa</title> 
+    <title>Data Mahasiswa</title> 
 </head> 
 <body> 
-    <h1>Daftar Mahasiswa</h1>
-    <ol>
-        <li>Fahrul Sadikin</li> 
-        <li>Khairul Khazil</li> 
-        <li>Anisa Salwa</li> 
-        <li>Sepkha Wulan Dari</li> 
-    </ol> 
+<div class="container text-center mt-3 pt-3 bg-white"> 
+   @for($i = 0; $i < 5;$i++)
+   <div class ="alert alert-info d-inline-block">
+    Laravel
+</div>
+@endfor
+</div> 
+
 </body> 
 </html>

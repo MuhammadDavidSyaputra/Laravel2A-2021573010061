@@ -222,8 +222,21 @@ Route::get('/mahasiswa',function(){
  "mahasiswa03","mahasiswa04"));
 });*/
 
+// Route::get('/mahasiswa',function(){
+//     $nama = 'John Paijo Simatupang';
+//     $nilai =75;
+//     return view('mahasiswa',compact('nama','nilai'));
+// });
+
+// Route::get('/mahasiswa',function(){
+//     $nama = '<u>Elon Musk Batubara</u>';
+//     $nilai =75;
+//     return view('mahasiswa',compact('nama','nilai'));
+// });
+
 Route::get('/mahasiswa',function(){
-    $nama = 'John Paijo Simatupang';
-    $nilai =75;
-    return view('mahasiswa',compact('nilai','nilai'));
-})
+    $nama = 'Elon Musk Batubara';
+    $nilai =0;
+    return view('mahasiswa',compact('nama','nilai'));
+});
+
