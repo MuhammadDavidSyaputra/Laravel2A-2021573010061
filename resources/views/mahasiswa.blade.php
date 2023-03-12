@@ -8,12 +8,22 @@
 </head> 
 <body> 
 <div class="container text-center mt-3 pt-3 bg-white"> 
-   @for($i = 0; $i < 5;$i++)
-   <div class ="alert alert-info d-inline-block">
-    Laravel
+<h1 class="bg-dark px-3 py-1 text-while d-inline-block">{{$nama}}</h1>
+<br>
+{{--
+@foreach ($nilai as $val)
+@if ($val< 50)
+@break
+@endif
+<div class="alert alert-info d-inline-block">
+    {{$val}}
 </div>
-@endfor
+@elseif (($val >= 50) and ($val <=100))
+<div class="alert alert-success d-inline-block">
+{{$val}}
+</div>
+@endforeach
+--}}
 </div> 
-
 </body> 
 </html>

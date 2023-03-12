@@ -234,9 +234,20 @@ Route::get('/mahasiswa',function(){
 //     return view('mahasiswa',compact('nama','nilai'));
 // });
 
-Route::get('/mahasiswa',function(){
-    $nama = 'Elon Musk Batubara';
-    $nilai =0;
+//Route::get('/mahasiswa',function(){
+//   $nama = 'Elon Musk Batubara';
+//   $nilai =0;
+//    return view('mahasiswa',compact('nama','nilai'));
+//});
+
+//Route::get('/mahasiswa', function () { 
+//    $nama = 'Vladimir Putin Harahap'; 
+//    $nilai = [80,64,30,76,95]; 
+//    return view('mahasiswa',compact('nama','nilai')); 
+//    }); 
+
+Router::get('mahasiswa',function () {
+    $nama = 'Tya Kirana Putri';
+    $nilai = [80,64,30,76,95];
     return view('mahasiswa',compact('nama','nilai'));
 });
-
