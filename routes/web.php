@@ -128,7 +128,7 @@ Route::get('/mahasiswa/andi',function(){
     echo "Halaman mahasiswa andi";
 });*/
 
-Route::get('/home',function(){
+/*Route::get('/home',function(){
     return view('halaman_home');
 });
 
@@ -220,4 +220,10 @@ Route::get('/mahasiswa',function(){
     $mahasiswa01 = "Deliana Putri"
  return view('kampus.mahasiswa'_)->with(compact("mahasiswa01","mahasiswa02",
  "mahasiswa03","mahasiswa04"));
-});
+});*/
+
+Route::get('/mahasiswa',function(){
+    $nama = 'John Paijo Simatupang';
+    $nilai =75;
+    return view('mahasiswa',compact('nilai','nilai'));
+})
