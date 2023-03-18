@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\View\View;
+use Symfony\Component\Routing\Router;
 
 /*
 |--------------------------------------------------------------------------
@@ -246,8 +247,20 @@ Route::get('/mahasiswa',function(){
 //    return view('mahasiswa',compact('nama','nilai')); 
 //    }); 
 
-Router::get('mahasiswa',function () {
-    $nama = 'Tya Kirana Putri';
-    $nilai = [80,64,30,76,95];
-    return view('mahasiswa',compact('nama','nilai'));
-});
+// Router::get('mahasiswa',function () {
+//     $nama = 'Tya Kirana Putri';
+//     $nilai = [80,64,30,76,95];
+//     return view('mahasiswa',compact('nama','nilai'));
+// });
+
+Route::get('mahasiswa', function () { 
+    $arrMahasiswa = ["Luhut Panjaitan","Dokowi","Vladimir Putin", "Lisa Permata"]; 
+    return view('mahasiswa')->with('mahasiswa', $arrMahasiswa); 
+}); 
+
+Route::get('dosen', function () { 
+    $arrDosen = ["Maya Fitrianti, M.M.","Prof. Silvia Nst, M.Farm.", "Dr. Umar Agustinus","Dr. Syahrial, M.Kom."]; 
+    return view('dosen')->with('dosen', $arrDosen); 
+}); 
+Route::get('gallery', function () {
+     return view('gallery'); }); 
