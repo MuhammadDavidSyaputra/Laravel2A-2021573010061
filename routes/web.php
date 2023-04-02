@@ -1,4 +1,8 @@
 <?php
+
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Admin\PageController;
-Route::get('/coba-class',[PageController::class,'cobaClass']); 
+
+Route::get('/mahasiswa','MahasiswaController@mahasiswa')->name('mahasiswa');
+Route::get('/dosen','MahasiswaController@dosen')->name('dosen');
+Route::get('/gallery','MahasiswaController@gallery')->name('gallery');
+Route::get('/informasi/{prodi}/{jurusan}','MahasiswaController@info')->name('info');
