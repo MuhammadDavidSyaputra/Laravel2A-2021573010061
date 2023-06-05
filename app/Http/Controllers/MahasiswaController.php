@@ -1,10 +1,11 @@
 <?php
+ namespace App\Models;
 
-namespace App\Http\Controllers;
+ use Illuminate\Database\Eloquent\Factories\HasFactory; 
+ use Illuminate\Database\Eloquent\Model; 
 
-use Illuminate\Http\Request;
-
-class MahasiswaController extends Controller
-{
-    //
+class Mahasiswa extends Model  
+{ 
+   use HasFactory;
+protected $fillable = ['nim','nama','tanggal_lahir','ipk'];
 }
